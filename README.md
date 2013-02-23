@@ -46,5 +46,5 @@ winston.add(winstonNodeMailer, options);
   <dt>silent</dt>
   <dd>Boolean flag indicating whether to suppress output.</dd>
   <dt>transport</dt>
-  <dd>A NodeMailer transport e.g. smtpTransport</dd>
+  <dd>A NodeMailer transport e.g. smtpTransport [required]</dd>
 </dl>
