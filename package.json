@@ -1,0 +1,28 @@
+{
+    "name": "winston-nodemailer",
+    "version": "0.0.0",
+    "description": "An email transport layer for winston",
+    "main": "index.js",
+    "scripts": {
+        "test": "mocha"
+    },
+    "repository": "",
+    "keywords": [
+        "winston",
+        "mailer",
+        "email"
+    ],
+    "dependencies" : {
+    },
+    "devDependencies" : {
+        "mocha" : "*",
+        "should" : "*"
+    },
+    "peerDependencies" : {
+        "nodemailer" : "0.3.x",
+        "winston" : "0.6.x"
+    },
+
+    "author": "Thomas Peklak",
+    "license": "BSD"
+}
