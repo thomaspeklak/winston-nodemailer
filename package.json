@@ -4,7 +4,7 @@
     "description": "An email transport layer for winston",
     "main": "index.js",
     "scripts": {
-        "test": "mocha"
+        "test": "vows test/*-test.js --spec"
     },
     "repository": "",
     "keywords": [
@@ -13,10 +13,11 @@
         "email"
     ],
     "dependencies" : {
+        "underscore" : "1.4.x"
     },
     "devDependencies" : {
-        "mocha" : "*",
-        "should" : "*"
+        "winston" : "0.6.x",
+        "vows" : "*"
     },
     "peerDependencies" : {
         "nodemailer" : "0.3.x",

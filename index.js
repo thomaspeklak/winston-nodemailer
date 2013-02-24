@@ -2,7 +2,6 @@
 
 var util    = require("util");
 var os      = require("os");
-var email   = require("emailjs");
 var winston = require("winston");
 var _       = require("underscore");
 
@@ -42,6 +41,9 @@ var NodeMailer = function (options) {
     this.handleExceptions = options.handleExceptions || false;
 };
 
+/** @extends winston.Transport */
+util.inherits(NodeMailer, winston.Transport);
+
 NodeMailer.prototype.log = function (level, msg, meta, callback) {
     var self = this;
     if (this.silent) return callback(null, true);
@@ -63,8 +65,6 @@ NodeMailer.prototype.log = function (level, msg, meta, callback) {
     });
 };
 
-/** @extends winston.Transport */
-util.inherits(NodeMailer, winston.Transport);
 
 winston.transports.NodeMailer = NodeMailer;
 
