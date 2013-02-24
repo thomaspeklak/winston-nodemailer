@@ -1,7 +1,5 @@
 #Winston NodeMailer [![Build Status](https://travis-ci.org/thomaspeklak/winston-nodemailer.png)](https://travis-ci.org/thomaspeklak/winston-nodemailer) [![Dependency Status](https://gemnasium.com/thomaspeklak/winston-nodemailer.png)](https://gemnasium.com/thomaspeklak/winston-nodemailer)
 
-__WIP__
-
 is a transport for Winston that uses NodeMailer to send mails for log events.
 Contrary to other solution Winston NodeMailer requires you to provide a valid
 NodeMailer transport. It's in your hand how to configure your desired
