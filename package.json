@@ -6,7 +6,6 @@
     "scripts": {
         "test": "vows test/*-test.js --spec"
     },
-    "repository": "",
     "keywords": [
         "winston",
         "mailer",
@@ -27,7 +26,6 @@
         "nodemailer" : "0.3.x",
         "winston" : "0.6.x"
     },
-
     "author": "Thomas Peklak",
     "license": "BSD",
     "engines" : {
