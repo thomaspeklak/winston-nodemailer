@@ -1,6 +1,6 @@
 #Winston NodeMailer
 [![Build
-Status](https://travis-ci.org/thomaspeklak/winston-nodemailer.png)](https://travis-ci.org/[YOUR_GITHUB_USERNAME]/[YOUR_PROJECT_NAME]) [![Dependency
+Status](https://travis-ci.org/thomaspeklak/winston-nodemailer.png)](https://travis-ci.org/thomaspeklak/winston-nodemailer) [![Dependency
 Status](https://gemnasium.com/thomaspeklak/winston-nodemailer.png)](https://gemnasium.com/thomaspeklak/winston-nodemailer)
 
 __WIP__
