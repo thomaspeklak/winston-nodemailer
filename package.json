@@ -1,34 +1,34 @@
 {
-    "name": "winston-nodemailer",
-    "version": "0.0.2",
-    "description": "An email transport layer for winston",
-    "main": "index.js",
-    "scripts": {
-        "test": "vows test/*-test.js --spec"
-    },
-    "keywords": [
-        "winston",
-        "mailer",
-        "email"
-    ],
-    "dependencies" : {
-        "underscore" : "1.4.x"
-    },
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/thomaspeklak/winston-nodemailer.git"
-    },
-    "devDependencies" : {
-        "winston" : "0.6.x",
-        "vows" : "*"
-    },
-    "peerDependencies" : {
-        "nodemailer" : ">=0.3.0 <0.8.0",
-        "winston" : ">=0.6.0 <0.8.0"
-    },
-    "author": "Thomas Peklak",
-    "license": "BSD",
-    "engines" : {
-        "node" : ">0.6.0"
-    }
+  "name": "winston-nodemailer",
+  "version": "0.0.3",
+  "description": "An email transport layer for winston",
+  "main": "index.js",
+  "scripts": {
+    "test": "vows test/*-test.js --spec"
+  },
+  "keywords": [
+    "winston",
+    "mailer",
+    "email"
+  ],
+  "dependencies": {
+    "underscore": "1.4.x"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/thomaspeklak/winston-nodemailer.git"
+  },
+  "devDependencies": {
+    "winston": "0.6.x",
+    "vows": "*"
+  },
+  "peerDependencies": {
+    "nodemailer": ">=0.3.0 <0.8.0",
+    "winston": ">=0.6.0 <0.8.0"
+  },
+  "author": "Thomas Peklak",
+  "license": "BSD",
+  "engines": {
+    "node": ">0.6.0"
+  }
 }
