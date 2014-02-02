@@ -23,11 +23,12 @@ var check = function (options) {
 };
 
 var NodeMailer = function (options) {
+    winston.Transport.call(this, options);
     options = options || {};
 
     check(options);
     this.mailOptions = {
-        name      : "nodemailer",
+        name      : this.name,
         to        : options.to,
         from      : options.from                   || "winston@" + os.hostname(),
         level     : options.level                  || "info",
@@ -43,6 +44,12 @@ var NodeMailer = function (options) {
 
 /** @extends winston.Transport */
 util.inherits(NodeMailer, winston.Transport);
+
+//
+// Expose the name of this Transport on the prototype
+//
+NodeMailer.prototype.name = 'nodemailer';
+
 
 NodeMailer.prototype.log = function (level, msg, meta, callback) {
     var self = this;
