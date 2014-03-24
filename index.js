@@ -62,7 +62,11 @@ NodeMailer.prototype.log = function (level, msg, meta, callback) {
 
     var text = meta ?  msg + "\n\n" + meta : msg;
 
-    mailOptions.subject = this.mailOptions.subject({level: level, msg: msg.split("\n")[0]});
+    mailOptions.subject = this.mailOptions.subject({
+        level: level,
+        msg: msg.split("\n")[0],
+        env: process.env.NODE_ENV
+    });
     mailOptions.text = text;
 
     this.transport.sendMail(mailOptions, function (err) {
